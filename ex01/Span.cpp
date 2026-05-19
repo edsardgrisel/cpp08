@@ -3,7 +3,7 @@
 #include <algorithm>
 
 // Public
-Span::Span(int N) : N(N)
+Span::Span(unsigned int N) : N(N)
 {
 }
 
