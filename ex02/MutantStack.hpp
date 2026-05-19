@@ -3,7 +3,7 @@
 
 #include <stack>
 
-template <typename T> class MutantStack : std::stack<T>
+template <typename T> class MutantStack : public std::stack<T>
 {
     public:
         MutantStack();
@@ -21,5 +21,8 @@ template <typename T> class MutantStack : std::stack<T>
 
     private:
 };
+
+#include "MutantStack.tpp"
+
 
 #endif // MUTANTSTACK_HPP

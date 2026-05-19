@@ -1,10 +1,9 @@
-NAME = EX01
+NAME = EX02
 CPP = c++
 CPPFLAGS = -Wall -Werror -Wextra -MMD -g -std=c++20
 
 BUILD_DIR = build
-SRC =	main.cpp \
-		Span.cpp 
+SRC =	main.cpp
 
 OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(SRC))
 DEP = ${OBJ:.o=.d}
